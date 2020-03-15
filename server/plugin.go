@@ -27,7 +27,7 @@ func (p *Plugin) ServeHTTP(c *plugin.Context, w http.ResponseWriter, r *http.Req
 }
 
 func (p *Plugin) OnActivate() error {
-	// panic("dude")
+	panic("dude")
 	return nil
 }
 
