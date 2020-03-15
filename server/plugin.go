@@ -22,7 +22,13 @@ type Plugin struct {
 
 // ServeHTTP demonstrates a plugin that handles HTTP requests by greeting the world.
 func (p *Plugin) ServeHTTP(c *plugin.Context, w http.ResponseWriter, r *http.Request) {
+	panic("dude")
 	fmt.Fprint(w, "Hello, world!")
+}
+
+func (p *Plugin) OnActivate() error {
+	// panic("dude")
+	return nil
 }
 
 // See https://developers.mattermost.com/extend/plugins/server/reference/
