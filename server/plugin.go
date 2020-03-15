@@ -20,7 +20,7 @@ type Plugin struct {
 	configuration *configuration
 }
 
-// ServeHTTP demonstrates a plugin that handles HTTP requests by greeting the world.
+// ServeHTTP demonstrates a plugin that handles HTTP requests by greeting the world. And tests fourth
 func (p *Plugin) ServeHTTP(c *plugin.Context, w http.ResponseWriter, r *http.Request) {
 	panic("dude")
 	fmt.Fprint(w, "Hello, world!")
